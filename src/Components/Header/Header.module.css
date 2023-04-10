@@ -10,3 +10,19 @@
 
     background-color: lightskyblue;
 }
+
+
+@media (max-width: 650px) and (max-height: 900px){
+    .header {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 80px;
+        width: 100%;
+
+        background-color: lightskyblue;
+    }
+
+}

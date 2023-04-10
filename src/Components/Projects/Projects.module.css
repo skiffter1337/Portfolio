@@ -1,15 +1,14 @@
-.skillsBlock {
+.projectsBlock {
     height: 100vh;
-    background-color: lightgreen;
+    background-color: lightsalmon;
 }
 
-.skillsContainer {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
 
-
-.skills {
+.projects {
     gap: 10px;
     display: flex;
     flex-direction: row;
@@ -17,15 +16,19 @@
     flex-wrap: wrap;
     width: 100%;
     border: 1px solid red;
+
 }
 
-@media (max-width: 650px) and (max-height: 900px){
-    .skills {
+
+@media (max-width: 650px) and (max-height: 900px) {
+    .projects {
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
         border: 1px solid red;
+
     }
+
 }
