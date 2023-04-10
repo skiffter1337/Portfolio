@@ -1,0 +1,49 @@
+.contactsBlock {
+    height: 60vh;
+    background-color: lightcoral;
+}
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+.contactsFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+
+    border: 1px solid lime;
+}
+
+input {
+    width: 600px;
+    height: 30px;
+}
+
+textarea {
+    height: 60px;
+}
+
+
+@media (max-width: 650px) and (max-height: 900px){
+    .contactsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    input {
+        width: 200px;
+        height: 15px;
+    }
+
+    textarea {
+        height: 30px;
+    }
+}
