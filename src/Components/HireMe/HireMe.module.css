@@ -1,0 +1,13 @@
+.hireMeBlock {
+    height: 30vh;
+    background-color: blanchedalmond;
+}
+
+.hireMeContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
