@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+
+    width: 80%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+@media (min-width: 350px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        margin: 0 auto;
+
+        width: 80%;
+        height: 100%;
+        border: 1px solid blue;
+    }
+
+}

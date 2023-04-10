@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {About} from "./Components/About/About";
+import {Main} from "./Components/Main/Main";
 import {Header} from "./Components/Header/Header";
 import {Skills} from "./Components/Skills/Skills";
 import {Projects} from "./Components/Projects/Projects";
@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <About/>
+            <Main/>
             <Skills/>
             <Projects/>
             <HireMe/>
