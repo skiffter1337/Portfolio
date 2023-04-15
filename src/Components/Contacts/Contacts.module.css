@@ -10,6 +10,7 @@
     gap: 50px;
 }
 .contactsFormContainer {
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,31 +20,17 @@
     border: 1px solid lime;
 }
 
-input {
-    width: 600px;
-    height: 30px;
-}
-
-textarea {
-    height: 60px;
-}
-
 
 @media (max-width: 650px) and (max-height: 900px){
-    .contactsContainer {
+
+    .contactsFormContainer {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 50px;
-    }
+        justify-content: center;
+        align-items: stretch;
+        gap: 5px;
 
-    input {
-        width: 200px;
-        height: 15px;
-    }
-
-    textarea {
-        height: 30px;
+        border: 1px solid lime;
     }
 }

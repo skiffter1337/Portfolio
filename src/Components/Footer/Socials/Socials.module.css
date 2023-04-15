@@ -1,6 +1,16 @@
 .socialsLinks {
     width: 300px;
-display: flex;
+    display: flex;
     justify-content: space-between;
     border: 1px solid red;
+}
+
+
+@media (max-width: 650px) and (max-height: 900px) {
+    .socialsLinks {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+    }
 }

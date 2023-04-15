@@ -1,7 +1,11 @@
+
+
 .skillsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: lightgreen;
 }
+
+
 
 .skillsContainer {
     flex-direction: column;
@@ -19,7 +23,10 @@
     border: 1px solid red;
 }
 
+
+
 @media (max-width: 650px) and (max-height: 900px){
+
     .skills {
         display: flex;
         flex-direction: row;
@@ -29,3 +36,4 @@
         border: 1px solid red;
     }
 }
+

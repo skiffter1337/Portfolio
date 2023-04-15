@@ -11,6 +11,8 @@ export const Projects = () => {
                 <div className={s.projects}>
                     <Project title={"Project name"} description={"Description"}/>
                     <Project title={"Project name"} description={"Description"}/>
+                    <Project title={"Project name"} description={"Description"}/>
+                    <Project title={"Project name"} description={"Description"}/>
                 </div>
             </div>
         </div>
