@@ -1,0 +1,12 @@
+@mixin flexCenter($flex, $center, $center2) {
+  display: $flex;
+  justify-content: $center;
+  align-items: $center2;
+}
+
+@mixin fontFamily($family: null, $weight: null, $size: null, $lineHeight: null) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}

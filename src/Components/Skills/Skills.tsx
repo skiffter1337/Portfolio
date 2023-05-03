@@ -1,27 +1,31 @@
 import React from 'react';
-import s from './Skills.module.css'
+import s from './Skills.module.scss'
 import {Skill} from './Skill/Skill';
 import styleContainer from './../../common/styles/Container.module.css'
+import {Title} from "../../common/components/Title";
 
 export const Skills = () => {
+    let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2>My skills</h2>
-                <div className={s.skills}>
+                <Title>My skills</Title>
+                <div className={s.skills_block}>
+                    <Skill title={"React"}
+                           description={lorem}/>
+                    <Skill title={"Redux"}
+                           description={lorem}/>
+                    <Skill title={"TypeScript"}
+                           description={lorem}/>
+                    <Skill title={"JavaScript"}
+                           description={lorem}/>
                     <Skill title={"skill"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <Skill title={"skill"}
-                           description={"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
-                    <Skill title={"skill"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <Skill title={"skill"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/><Skill title={"skill"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                           description={lorem}/>
 
                 </div>
             </div>
         </div>
     );
 };
+
 

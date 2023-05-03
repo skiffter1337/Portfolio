@@ -1,0 +1,39 @@
+@import 'src/common/styles/sass/variables';
+
+
+.block_title {
+    text-align: center;
+    margin-bottom: 72px;
+    position: relative;
+    h2 {
+        color: $headerTextColor;
+        line-height: 1;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 0;
+        &:before, &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-bottom-color: $primaryColor;
+            position: absolute;
+            top: 2.5px;
+
+        }
+        &:before {
+            border-left-color: $primaryColor;
+            right: -30px;
+        }
+        &:after {
+            border-right-color: $primaryColor;
+            left: -30px;
+        }
+
+    }
+}
+
+
+
+
+

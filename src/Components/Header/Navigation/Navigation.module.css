@@ -1,9 +1,16 @@
-.nav {
-    width: 300px;
+.nav_container {
 
+}
+
+.nav_list {
+    width: 300px;
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 
 
     border: 1px solid red;
+
+
 }
+

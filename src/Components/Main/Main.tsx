@@ -7,8 +7,8 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={styleContainer.container}>
             <div className={s.greeting}>
-                <span>Hello</span>
-                <h1>My name is Lorem Ipsum</h1>
+                <h2>Hello, I'm</h2>
+                <h1>Ilya Litovski</h1>
                 <p>I am frontend developer</p>
             </div>
             <div className={s.photo}><img src={"https://placehold.co/300x400"} alt={"main photo"}/></div>
