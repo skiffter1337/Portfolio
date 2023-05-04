@@ -40,10 +40,13 @@
       border-radius: 5px;
       color: #fff;
       @include fontFamily($headerFontFamily, 700, 14px);
+      &:hover {
+        transition: 0.2s;
+        background: rgba($primaryColor, 0.7);
+        cursor: pointer;
+      }
     }
-    .project_btn:hover {
-      cursor: pointer;
-    }
+
   }
   .project_info {
     padding: 20px;

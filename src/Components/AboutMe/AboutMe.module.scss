@@ -1,0 +1,95 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.about_block {
+  min-height: 100vh;
+  padding: 100px;
+  background-color: #222222;
+  .content_row {
+    display: flex;
+    justify-content: space-around;
+    .content_block {
+      width: 40%;
+      h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+        color: #fff;
+        span {
+          display: block;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $primaryColor
+        }
+      }
+      .about_par {
+        @include fontFamily($textFontFamily, 500, 18px, 1.5, $paragraphTextColor);
+        margin-bottom: 1rem;
+      }
+    }
+    .about_btn {
+      padding: 15px 42px;
+      background: #009e66;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      @include fontFamily($headerFontFamily, 700, 18px, 1.5, #fff);
+      &:hover {
+        transition: 0.2s;
+        background: rgba($primaryColor, 0.7);
+        cursor: pointer;
+      }
+    }
+    .personal_info_block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      margin-bottom: 36px;
+      @include fontFamily($textFontFamily, 500, 18px, 1.2, $paragraphTextColor);
+
+      .personal_info_list {
+        width: 50%;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          padding-bottom: 20px;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        @include fontFamily($textFontFamily, 500, 18px, 1.2, #fff);
+      }
+    }
+  }
+}
+
+
+
+.image_block img {
+  width: 500px;
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

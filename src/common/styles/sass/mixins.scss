@@ -4,9 +4,10 @@
   align-items: $center2;
 }
 
-@mixin fontFamily($family: null, $weight: null, $size: null, $lineHeight: null) {
+@mixin fontFamily($family: null, $weight: null, $size: null, $lineHeight: null, $color: null) {
   font-family: $family;
   font-weight: $weight;
   font-size: $size;
   line-height: $lineHeight;
+  color: $color;
 }
