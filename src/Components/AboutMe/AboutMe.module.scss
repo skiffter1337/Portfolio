@@ -63,7 +63,7 @@
         font-size: 16px;
         margin-bottom: 4px;
         text-transform: uppercase;
-        @include fontFamily($textFontFamily, 500, 18px, 1.2, #fff);
+        @include fontFamily($textFontFamily, 600, 18px, 1.2, #fff);
       }
     }
   }

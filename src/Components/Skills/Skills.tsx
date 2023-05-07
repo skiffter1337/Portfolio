@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Skills.module.scss'
 import {Skill} from './Skill/Skill';
 import styleContainer from './../../common/styles/Container.module.css'
-import {Title} from "../../common/components/Title";
+import {Title} from "../../common/components/Title/Title";
 
 export const Skills = () => {
     let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
