@@ -10,9 +10,9 @@ export const Skills = () => {
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title>My skills</Title>
-                <div className={s.skills_block}>
+                <div className={s.skills}>
                     <Skill title={"React"}
-                           description={lorem}/>
+                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
                     <Skill title={"Redux"}
                            description={lorem}/>
                     <Skill title={"TypeScript"}

@@ -5,15 +5,23 @@
   min-height: 100vh;
   padding: 100px;
   background-color: #222222;
+
+
   .content_row {
     display: flex;
     justify-content: space-around;
+    gap: 100px;
+    border: 2px solid lime;
+
+
     .content_block {
-      width: 40%;
+      width: 100%;
+
       h2 {
         font-size: 48px;
         margin-bottom: 30px;
         color: #fff;
+
         span {
           display: block;
           font-size: 18px;
@@ -21,11 +29,15 @@
           color: $primaryColor
         }
       }
+
       .about_par {
         @include fontFamily($textFontFamily, 500, 18px, 1.5, $paragraphTextColor);
         margin-bottom: 1rem;
+
+
       }
     }
+
     .about_btn {
       padding: 15px 42px;
       background: #009e66;
@@ -34,12 +46,14 @@
       text-decoration: none;
       border: none;
       @include fontFamily($headerFontFamily, 700, 18px, 1.5, #fff);
+
       &:hover {
         transition: 0.2s;
         background: rgba($primaryColor, 0.7);
         cursor: pointer;
       }
     }
+
     .personal_info_block {
       display: flex;
       flex-wrap: wrap;
@@ -49,6 +63,7 @@
 
       .personal_info_list {
         width: 50%;
+
       }
 
       ul {
@@ -70,14 +85,32 @@
 }
 
 
-
 .image_block img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 
+@media screen and (max-width: 1500px) {
 
+  .content_row {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-left: -70px;
+  }
+  .personal_info_block {
+    flex-direction: column;
+  }
+  .image_block img {
+    width: 200px;
+    height: 200px;
+  }
+  h2 {
+    font-size: 35px !important;
+  }
+
+}
 
 
 

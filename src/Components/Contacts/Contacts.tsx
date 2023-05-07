@@ -69,7 +69,8 @@ export const Contacts = () => {
                     {/*        {submitStatus && "Great ! Your message has been sent !!"}*/}
                     {/*    </p>*/}
                     {/*</div>*/}
-                    <form className={s.contactsFormContainer}>
+                    <div className={s.contactsFormContainer}>
+                    <form>
                         <h3>Write me a message</h3>
                             <div className={s.from_control}>
                         <input placeholder={"Name*"} required className={s.form_input}/>
@@ -78,6 +79,7 @@ export const Contacts = () => {
                         <textarea placeholder={"Your message here*"} required className={s.form_textarea}></textarea>
                         <button type="submit" className={s.submitBtn} onSubmit={onSubmit} >Send message</button>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>

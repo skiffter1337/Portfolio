@@ -37,3 +37,9 @@
 
   @include fontFamily($textFontFamily, 400, 18px, 1.5);
 }
+
+@media screen and (max-width: 550px){
+.skill_block {
+  width: 300px;
+}
+}
