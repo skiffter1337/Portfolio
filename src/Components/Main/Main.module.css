@@ -1,13 +1,65 @@
-.mainBlock {
+
+
+.main_block {
     height: 100vh;
-    background-color: lightpink;
+    background: url("/src/assets/image/bgGreen.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
-.greeting {
-    width: 300px;
+.main_container {
+    width: 100%;
+
 }
+
+.greeting h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 90px;
+}
+.small {
+    font-size: 24px;
+    margin-bottom: 12px;
+
+}
+
+.strong {
+    color: #009e66;
+}
+
+.greeting p {
+    font-size: 24px;
+    color: #b0aac0;
+}
+
 
 .photo {
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 600px;
 }
+
+.contact_me_btn {
+    margin-top: 60px;
+    padding: 15px 42px;
+    background: #009e66;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact_me_btn:hover {
+     transition: 0.2s;
+     /*background: rgba($primaryColor, 0.7);*/
+     cursor: pointer;
+ }

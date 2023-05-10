@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     gap: 100px;
-    border: 2px solid lime;
+
 
 
     .content_block {
@@ -86,6 +86,7 @@
 
 
 .image_block img {
+
   width: 400px;
   height: 400px;
 }
@@ -106,7 +107,7 @@
     width: 200px;
     height: 200px;
   }
-  h2 {
+  .content_block h2 {
     font-size: 35px !important;
   }
 

@@ -3,7 +3,6 @@ import s from './Projects.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
 import {Project} from './Project/Project';
 import {Title} from '../../common/components/Title/Title';
-import socialImg from './../../assets/image/social_network.png'
 import socialImg2 from './../../assets/image/social_network2.png'
 import socialImg4 from './../../assets/image/social_network4.png'
 import todoListImg from './../../assets/image/todoList.webp'

@@ -12,16 +12,17 @@
     flex-direction: column;
 
     .contacts_row {
+     
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      flex-direction: row;
       gap: 50px;
 
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       color: #b0aac0;
       width: 100%;
+      margin-bottom: 30px;
 
 
       .contact_block {
@@ -52,11 +53,11 @@
     }
 
     .form_row {
+
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
-      flex-direction: row;
       margin-bottom: 60px;
 
       .contactsFormContainer {
@@ -82,7 +83,7 @@
           padding: 16px 18px;
           flex: 1 1 auto;
           width: 1%;
-          position: relative;
+
           border-radius: 4px;
 
           &:active {
@@ -147,6 +148,21 @@
   }
 }
 
+@media screen and (max-width: 1230px) {
+
+
+  .contacts_row {
+    flex-direction: column;
+
+  }
+
+  .contact_block {
+    justify-content: flex-start !important;
+
+  }
+
+
+}
 
 
 

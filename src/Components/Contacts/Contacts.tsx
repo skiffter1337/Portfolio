@@ -15,6 +15,7 @@ export const Contacts = () => {
         <div className={s.contactsBlock}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title>Get in touch</Title>
+
                 <div className={s.contacts_row}>
                     <div className={s.contact_block}>
                         <div className={s.icon_box}>
@@ -62,13 +63,9 @@ export const Contacts = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={s.form_row}>
                     <Map/>
-                    {/*<div>*/}
-                    {/*    <p className={s.submit_succes}>*/}
-                    {/*        {submitStatus && "Great ! Your message has been sent !!"}*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
                     <div className={s.contactsFormContainer}>
                     <form>
                         <h3>Write me a message</h3>
@@ -82,6 +79,7 @@ export const Contacts = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
