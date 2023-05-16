@@ -57,6 +57,16 @@
           color: #fff;
           margin-right: 24px;
           font-size: 24px;
+          position: relative;
+
+          .icons {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            width: 30px;
+            color: #ffffff;
+          }
+
         }
       }
     }
@@ -65,9 +75,9 @@
 
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 150px;
       margin-bottom: 60px;
 
       .contactsFormContainer {
@@ -161,10 +171,11 @@
 
 
 
-
 @media screen and (max-width: 1230px) {
 
-
+  .form_row {
+    gap: 40px !important;
+  }
   .contacts_row {
     flex-direction: column;
 

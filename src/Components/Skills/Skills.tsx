@@ -3,6 +3,9 @@ import s from './Skills.module.scss'
 import {Skill} from './Skill/Skill';
 import styleContainer from './../../common/styles/Container.module.css'
 import {Title} from "../../common/components/Title/Title";
+import ts from "../../assets/image/ts.svg"
+import react from "../../assets/image/react.svg"
+import redux from "../../assets/image/redux.svg"
 
 export const Skills = () => {
     let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -12,15 +15,21 @@ export const Skills = () => {
                 <Title>My skills</Title>
                 <div className={s.skills}>
                     <Skill title={"React"}
-                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+                           img={react}
+                    />
                     <Skill title={"Redux"}
-                           description={lorem}/>
+                           description={lorem}
+                    img={redux}
+                    />
                     <Skill title={"TypeScript"}
-                           description={lorem}/>
+                           description={lorem}
+                    img={ts}
+                    />
                     <Skill title={"JavaScript"}
-                           description={lorem}/>
-                    <Skill title={"skill"}
-                           description={lorem}/>
+                           description={lorem}
+                    img={ts}
+                    />
 
                 </div>
             </div>

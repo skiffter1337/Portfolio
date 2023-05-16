@@ -3,12 +3,15 @@ import s from './Contacts.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
 import {Title} from "../../common/components/Title/Title";
 import {Map} from "../../common/components/Map/Map";
+import address from "../../assets/image/map-marker.svg"
+import phone from "../../assets/image/call.svg"
+import email from "../../assets/image/mail.svg"
 
 
 export const Contacts = () => {
 
-    const [submitStatus, setSubmitStatus] = useState(true)
-    const onSubmit = () => setSubmitStatus(true)
+
+
 
 
     return (
@@ -19,9 +22,7 @@ export const Contacts = () => {
                 <div className={s.contacts_row}>
                     <div className={s.contact_block}>
                         <div className={s.icon_box}>
-                            <i className={s.icon_call}>
-
-                            </i>
+                            <img src={address} className={s.icons}/>
                         </div>
                         <div className={s.info_wrapper}>
                             <h4>
@@ -34,9 +35,7 @@ export const Contacts = () => {
                     </div>
                     <div className={s.contact_block}>
                         <div className={s.icon_box}>
-                            <i>
-
-                            </i>
+                            <img src={phone} className={s.icons}/>
                         </div>
                         <div className={s.info_wrapper}>
                             <h4>
@@ -49,9 +48,7 @@ export const Contacts = () => {
                     </div>
                     <div className={s.contact_block}>
                         <div className={s.icon_box}>
-                            <i>
-
-                            </i>
+                            <img src={email} className={s.icons}/>
                         </div>
                         <div className={s.info_wrapper}>
                             <h4>
@@ -67,15 +64,16 @@ export const Contacts = () => {
                 <div className={s.form_row}>
                     <Map/>
                     <div className={s.contactsFormContainer}>
-                    <form>
-                        <h3>Write me a message</h3>
+                        <form>
+                            <h3>Write me a message</h3>
                             <div className={s.from_control}>
-                        <input placeholder={"Name*"} required className={s.form_input}/>
-                        <input type={"email"} placeholder={"Email*"} required className={s.form_input}/>
+                                <input placeholder={"Name*"} required className={s.form_input}/>
+                                <input type={"email"} placeholder={"Email*"} required className={s.form_input}/>
                             </div>
-                        <textarea placeholder={"Your message here*"} required className={s.form_textarea}></textarea>
-                        <button type="submit" className={s.submitBtn} onSubmit={onSubmit} >Send message</button>
-                    </form>
+                            <textarea placeholder={"Your message here*"} required
+                                      className={s.form_textarea}></textarea>
+                            <button type="submit" className={s.submitBtn}>Send message</button>
+                        </form>
                     </div>
                 </div>
             </div>
