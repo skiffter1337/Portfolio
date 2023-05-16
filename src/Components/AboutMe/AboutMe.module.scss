@@ -3,10 +3,10 @@
 
 .about_block {
   min-height: 100vh;
-  padding: 100px;
+  padding: 100px 0;
   background-color: #222222;
 
-
+.about_container {
   .content_row {
     display: flex;
     justify-content: space-around;
@@ -16,6 +16,7 @@
 
     .content_block {
       width: 100%;
+      max-width: 700px;
 
       h2 {
         font-size: 48px;
@@ -83,12 +84,14 @@
     }
   }
 }
+}
 
 
 .image_block img {
+  border-radius: 5%;
+  width: 100%;
+  max-width: 400px;
 
-  width: 400px;
-  height: 400px;
 }
 
 
@@ -97,16 +100,12 @@
   .content_row {
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    margin-left: -70px;
+
   }
   .personal_info_block {
     flex-direction: column;
   }
-  .image_block img {
-    width: 200px;
-    height: 200px;
-  }
+
   .content_block h2 {
     font-size: 35px !important;
   }

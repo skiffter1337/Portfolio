@@ -7,9 +7,18 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h2>Lorem Ipsum</h2>
+                <div className={s.footer_title}>
+                    <span>
+                        Ilya Shulapov
+                    </span>
+                    <span>
+                        Frontend developer
+                    </span>
+                </div>
                 <Socials/>
-                <span>© 2023 all rights reserved</span>
+                <div>
+                    <span>© 2023 all rights reserved</span>
+                </div>
             </div>
         </div>
     );

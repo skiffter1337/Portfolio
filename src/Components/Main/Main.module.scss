@@ -1,8 +1,12 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
 
 
 .main_block {
-    height: 100vh;
-    background: url("/src/assets/image/bgGreen.jpg") no-repeat center center;
+    min-height: 100vh;
+    padding: 100px 0;
+    //background: url("/src/assets/image/bgAnotherGreen.png") no-repeat center center;
+    background-color: #003731;
     background-size: cover;
     color: #fff;
     position: relative;
@@ -11,6 +15,9 @@
 
 .main_container {
     width: 100%;
+    gap: 30px;
+
+   flex-wrap: wrap;
 
 }
 
@@ -20,7 +27,7 @@
     margin-bottom: 0.5rem;
     font-weight: 700;
     line-height: 1.2;
-    font-size: 90px;
+    font-size: calc( (100vw - 360px)/(1400 - 360) * (90 - 60) + 60px);
 }
 .small {
     font-size: 24px;
@@ -33,14 +40,16 @@
 }
 
 .greeting p {
-    font-size: 24px;
+    font-size: calc((100vw - 360px) / (1400 - 360) * (24 - 19) + 19px);
     color: #b0aac0;
 }
 
 
 .photo {
-    width: 500px;
-    height: 600px;
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 5%;
 }
 
 .contact_me_btn {
@@ -60,6 +69,12 @@
 
 .contact_me_btn:hover {
      transition: 0.2s;
-     /*background: rgba($primaryColor, 0.7);*/
+     background: rgba($primaryColor, 0.7);
      cursor: pointer;
  }
+
+@media screen and (max-width: 1230px) {
+    .main_container {
+        flex-direction: column-reverse;
+    }
+}

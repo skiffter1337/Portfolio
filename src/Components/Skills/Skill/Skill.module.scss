@@ -2,7 +2,7 @@
 @import "src/common/styles/sass/variables.scss";
 
 .skill_block {
-  width: 400px;
+  max-width: 400px;
   border: 1px solid #474747;
   padding: 60px 48px;
   border-radius: 10px;
@@ -38,8 +38,8 @@
   @include fontFamily($textFontFamily, 400, 18px, 1.5);
 }
 
-@media screen and (max-width: 550px){
-.skill_block {
-  width: 300px;
-}
-}
+//@media screen and (max-width: 550px){
+//.skill_block {
+//  width: 300px;
+//}
+//}
