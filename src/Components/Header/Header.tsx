@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './Header.module.css'
 import logo from '../../assets/image/logoIS.png'
-import MenuIcon from '@mui/icons-material/Menu';
+import {Burger} from "../Burger";
 
 export const Header = () => {
 
@@ -25,6 +25,8 @@ export const Header = () => {
 
     let headerStyles = scrolled ? `${s.header} ${s.header_scroll}` : `${s.header}`
 
+
+
     return (
         <div className={headerStyles}>
             <div className={s.header_container}>
@@ -33,11 +35,12 @@ export const Header = () => {
                         <img src={logo}/>
                     </a>
                 </div>
-                <div className={s.burger_wrapper}>
-                    <div className={s.burger_icon}>
-                      <MenuIcon fontSize={"large"}/>
-                    </div>
-                </div>
+                {/*<div className={s.burger_wrapper}>*/}
+                {/*    <div className={s.burger_icon}>*/}
+                {/*      <button className={s.btn} onClick={activateBurger}><MenuIcon fontSize={"large"}/></button>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+                <Burger/>
                 <nav className={s.nav_container}>
                     <div>
                         <ul className={s.nav_list}>
@@ -48,7 +51,7 @@ export const Header = () => {
                                 <a href="">Main</a>
                             </li>
                             <li>
-                                <a href="">About me</a>
+                                <a href="">About</a>
                             </li>
                             <li>
                                 <a href="">Skills</a>
