@@ -9,43 +9,40 @@
   margin-bottom: 24px;
   text-align: center;
   flex-direction: column;
-  @include flexCenter(flex, center, center);
+  @include flex(flex, center, center);
+  .icon_box {
+    font-size: 36px;
+    color: $primaryColor;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    position: relative;
+    .icons {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 50px;
+      color: #ffffff;
+    }
+
+  }
+  h3 {
+    color: $headerTextColor;
+    margin-bottom: 20px;
+    @include fontFamily($headerFontFamily, 600, 28px, 1.2);
+  }
+  .skill_description {
+    color: $paragraphTextColor;
+
+    @include fontFamily($textFontFamily, 400, 18px, 1.5);
+  }
 }
 
-.icon_box {
-  font-size: 36px;
-  color: $primaryColor;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  width: 90px;
-  height: 90px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  position: relative;
-}
-.icons {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 50px;
-  color: #ffffff;
-}
 
-.skill_info h3 {
-  color: $headerTextColor;
-  margin-bottom: 20px;
-  @include fontFamily($headerFontFamily, 600, 28px, 1.2);
-}
 
-.skill_description {
-  color: $paragraphTextColor;
 
-  @include fontFamily($textFontFamily, 400, 18px, 1.5);
-}
 
-//@media screen and (max-width: 550px){
-//.skill_block {
-//  width: 300px;
-//}
-//}

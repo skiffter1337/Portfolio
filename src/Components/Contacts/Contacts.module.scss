@@ -5,7 +5,7 @@
 .contactsBlock {
   min-height: 100vh;
   padding: 100px 0;
-  background-color: #222222;
+  background-color: $bgColor;
 
   .contactsContainer {
     display: flex;
@@ -21,7 +21,7 @@
 
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
-      color: #b0aac0;
+      color: $paragraphTextColor;
       width: 100%;
       margin-bottom: 30px;
 
@@ -44,14 +44,14 @@
         }
         &:hover {
           transition: 0.2s;
-          color: #009e66;
+          color: $primaryColor;
         }
 
         .icon_box {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: #009e66;
+          background: $primaryColor;
           line-height: 60px;
           text-align: center;
           color: #fff;
@@ -64,7 +64,7 @@
             left: 15px;
             top: 15px;
             width: 30px;
-            color: #ffffff;
+            color: #fff;
           }
 
         }
@@ -98,8 +98,8 @@
 
         .form_input {
           border: 1px solid #606060;
-          background: #2a2a2a;
-          color: #b0aac0;
+          background: $bgSecondColor;
+          color: $paragraphTextColor;
           font-size: 16px;
           padding: 16px 18px;
           flex: 1 1 auto;
@@ -126,8 +126,8 @@
         margin-top: 15px;
         margin-bottom: 15px;
         border: 1px solid #606060;
-        background: #2a2a2a;
-        color: #b0aac0;
+        background: $bgSecondColor;
+        color: $paragraphTextColor;
         font-size: 16px;
         display: block;
         width: 100%;
@@ -147,7 +147,7 @@
 
       .submitBtn {
         padding: 15px 42px;
-        background: #009e66;
+        background: $primaryColor;
         border-radius: 5px;
         text-transform: uppercase;
         text-decoration: none;

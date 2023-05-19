@@ -17,7 +17,7 @@
     background-size: cover;
     background-position: center;
 
-    @include flexCenter(flex, center, center);
+    @include flex(flex, center, center);
      &:before {
       position: absolute;
       content: '';

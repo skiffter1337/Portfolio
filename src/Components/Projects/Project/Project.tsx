@@ -1,14 +1,11 @@
 import React from 'react';
 import s from './Project.module.scss'
+import {ProjectsType} from "../Projects";
 
 
 
-type ProjectPropsType = {
-    title: string
-    description: string
-    image: string
-}
-export const Project = (props: ProjectPropsType) => {
+
+export const Project = (props: ProjectsType) => {
 
     const imageStyles = {backgroundImage: `url(${props.image})`}
 

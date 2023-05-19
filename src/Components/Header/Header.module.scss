@@ -1,0 +1,46 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.header {
+    position: fixed;
+    @include flex(flex, center, center);
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out;
+    z-index: 2;
+    .header_container {
+        width: 100%;
+        @include flex(flex, space-around, center);
+        img {
+            display: flex;
+            width: 80px;
+        }
+        .nav_list {
+            color: $primaryColor;
+            width: 100%;
+            min-width: 500px;
+            list-style-type: none;
+            @include flex(flex, space-between);
+            a {
+                @include fontFamily($headerFontFamily, bold, 18px, 18px, #fff, none, include);
+                &:hover {
+                    transition: 0.4s;
+                    color: $primaryColor;
+                }
+            }
+
+        }
+
+    }
+}
+
+.header_scroll {
+    background-color: $bgColor;
+}
+
+@media screen and (max-width: 1230px) {
+    .header {
+        background-color: $bgColor;
+    }
+}

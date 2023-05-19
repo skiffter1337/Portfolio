@@ -3,13 +3,10 @@
 
 .hireMeBlock {
     height: 30vh;
-    background-color: #2a2a2a;
+    background-color: $bgSecondColor;
     .hireMeContainer {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center, column);
         gap: 40px;
         h2 {
             color: $headerTextColor;
@@ -20,7 +17,7 @@
         }
         button {
             padding: 15px 42px;
-            background: #009e66;
+            background: $primaryColor;
             border-radius: 5px;
             text-transform: uppercase;
             text-decoration: none;

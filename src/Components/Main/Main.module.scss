@@ -11,66 +11,62 @@
     color: #fff;
     position: relative;
     z-index: 1;
+
 }
 
 .main_container {
     width: 100%;
     gap: 30px;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+     h1 {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: calc( (100vw - 360px)/(1400 - 360) * (90 - 60) + 60px);
+         .small {
+             font-size: 24px;
+             margin-bottom: 12px;
+         }
+
+         .strong {
+             color: #009e66;
+         }
+
+    }
+    p {
+        font-size: calc((100vw - 360px) / (1400 - 360) * (24 - 19) + 19px);
+        color: #b0aac0;
+    }
+    .photo {
+        width: 100%;
+        max-width: 500px;
+
+        border-radius: 5%;
+    }
+    .contact_me_btn {
+        margin-top: 60px;
+        padding: 15px 42px;
+        background: #009e66;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        &:hover {
+            transition: 0.2s;
+            background: rgba($primaryColor, 0.7);
+            cursor: pointer;
+        }
+    }
 
 }
 
-.greeting h1 {
-    font-family: 'Poppins', sans-serif;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: calc( (100vw - 360px)/(1400 - 360) * (90 - 60) + 60px);
-}
-.small {
-    font-size: 24px;
-    margin-bottom: 12px;
-
-}
-
-.strong {
-    color: #009e66;
-}
-
-.greeting p {
-    font-size: calc((100vw - 360px) / (1400 - 360) * (24 - 19) + 19px);
-    color: #b0aac0;
-}
-
-
-.photo {
-    width: 100%;
-    max-width: 500px;
-
-    border-radius: 5%;
-}
-
-.contact_me_btn {
-    margin-top: 60px;
-    padding: 15px 42px;
-    background: #009e66;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact_me_btn:hover {
-     transition: 0.2s;
-     background: rgba($primaryColor, 0.7);
-     cursor: pointer;
- }
 
 @media screen and (max-width: 1230px) {
     .main_container {
