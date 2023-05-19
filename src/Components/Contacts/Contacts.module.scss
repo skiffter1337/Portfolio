@@ -8,39 +8,24 @@
   background-color: $bgColor;
 
   .contactsContainer {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, null, null, column);
     flex-wrap: nowrap;
 
     .contacts_row {
-     
-      display: flex;
-      justify-content: space-evenly;
+      @include flex(flex, space-evenly);
+      @include fontFamily($textFontFamily, null, 18px, null, $paragraphTextColor);
       flex-wrap: wrap;
       gap: 50px;
-
-      font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
-      color: $paragraphTextColor;
       width: 100%;
       margin-bottom: 30px;
-
-
       .contact_block {
-        display: flex;
-        justify-content: space-between;
-
+        @include flex(flex, space-between);
         address {
           font-style: normal;
         }
-
         h4 {
-          font-family: 'Poppins', sans-serif;
-          font-size: 1.5rem;
-          color: #fff;
+          @include fontFamily($headerFontFamily, 700, 1.5rem, 1.2, #fff);
           margin-bottom: 0.5rem;
-          font-weight: 700;
-          line-height: 1.2;
         }
         &:hover {
           transition: 0.2s;
@@ -72,10 +57,8 @@
     }
 
     .form_row {
-
+      @include flex(flex, center);
       width: 100%;
-      display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       gap: 150px;
       margin-bottom: 60px;
@@ -84,7 +67,6 @@
         width: 100%;
         max-width: 600px;
       }
-
       h3 {
         font-size: 36px;
         margin-bottom: 28px;
@@ -95,7 +77,6 @@
       .from_control {
         display: flex;
         gap: 15px;
-
         .form_input {
           border: 1px solid #606060;
           background: $bgSecondColor;
@@ -110,7 +91,7 @@
           //&:active {
           // border-color: #009e66;
           //}
-
+          //
           //&::placeholder {
           //  font-size: 16px;
           //  font-weight: 400;
@@ -122,42 +103,28 @@
       }
 
       .form_textarea {
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border: 1px solid #606060;
-        background: $bgSecondColor;
-        color: $paragraphTextColor;
-        font-size: 16px;
+        @include fontFamily($textFontFamily, null, 16px, 1.5, $paragraphTextColor);
         display: block;
         width: 100%;
-        min-height: 183px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         padding: 12px 18px;
+        border: 1px solid #606060;
+        background: $bgSecondColor;
+        min-height: 183px;
         border-radius: 4px;
         appearance: none;
         resize: vertical;
-
-        &::placeholder {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 1.5;
-
-        }
       }
 
       .submitBtn {
+        @include fontFamily($headerFontFamily, 700, 18px, 1.5, #fff);
         padding: 15px 42px;
         background: $primaryColor;
         border-radius: 5px;
         text-transform: uppercase;
         text-decoration: none;
         border: none;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.5;
-        color: #fff;
-
         &:hover {
           transition: 0.2s;
           background: rgba($primaryColor, 0.7);
@@ -172,21 +139,15 @@
 
 
 @media screen and (max-width: 1230px) {
-
   .form_row {
     gap: 40px !important;
   }
   .contacts_row {
-    flex-direction: column;
-
+    flex-direction: column;;
   }
-
   .contact_block {
     justify-content: flex-start !important;
-
   }
-
-
 }
 
 

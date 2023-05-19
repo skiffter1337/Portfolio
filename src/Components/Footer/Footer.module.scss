@@ -1,0 +1,24 @@
+@import "src/common/styles/sass/variables.scss";
+@import 'src/common/styles/sass/mixins';
+
+.footerBlock {
+    @include fontFamily($textFontFamily, 400, 18px, null, #fff);
+    min-height: 25vh;
+    background-color: $bgSecondColor;
+    display: flex;
+    align-items: center;
+    .footerContainer {
+        display: flex;
+        gap: 40px;
+        .footer_title {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+
+
+
