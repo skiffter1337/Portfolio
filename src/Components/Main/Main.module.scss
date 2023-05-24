@@ -12,7 +12,40 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  .design_element {
+    .de_main1 {
+      left: 8%;
+      top: 22%;
+      position: absolute;
+    }
+    .de_main2 {
+      right: 7%;
+      top: 20%;
+      position: absolute;
+    }
+    .de_main3 {
+      right: 5%;
+      bottom: 12%;
+      position: absolute;
+    }
+    .de_main4 {
+      left: 48%;
+      top: 30%;
+      position: absolute;
+    }
+    .de_main5 {
+      left: 10%;
+      bottom: 18%;
+      position: absolute;
+    }
+    .elem_updown {
+      @include updown_anim;
+    }
 
+    .elem_move {
+      @include move_anim;
+    }
+  }
 }
 
 .main_container {
@@ -57,61 +90,7 @@
     gap: 40px;
     margin-top: 60px;
   }
-}
-.de_main1 {
-  left: 8%;
-  top: 22%;
-  position: absolute;
-}
-.de_main2 {
-  right: 7%;
-  top: 20%;
-  position: absolute;
-}
-.de_main3 {
-  right: 5%;
-  bottom: 12%;
-  position: absolute;
-}
-.de_main4 {
-  left: 48%;
-  top: 30%;
-  position: absolute;
-}
-.de_main5 {
-  left: 10%;
-  bottom: 18%;
-  position: absolute;
-}
-.elem_updown {
-  animation: anim_updown 5s infinite;
-}
 
-.elem_move {
-  animation: anim_move 5s infinite;
-}
-
-@keyframes anim_move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(30px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes anim_updown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 @media screen and (max-width: 1230px) {

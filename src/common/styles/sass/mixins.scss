@@ -14,14 +14,49 @@
   text-decoration: $decoration;
   text-transform: $transform;
 }
+
 @mixin container() {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    width: 80%;
-    height: 100%;
+  width: 80%;
+  height: 100%;
+}
+
+@mixin updown_anim() {
+
+  animation: anim_updown 5s infinite;
+
+  @keyframes anim_updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin move_anim() {
+
+  animation: anim_move 5s infinite;
+
+  @keyframes anim_move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }

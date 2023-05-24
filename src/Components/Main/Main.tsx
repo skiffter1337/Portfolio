@@ -2,11 +2,11 @@ import React from 'react';
 import s from './Main.module.scss'
 import KEKS_MAIN from './../../assets/image/keks_main.jpg'
 import {Button} from "../../common/components/Button/Button";
-import MAIN1 from '../../assets/particles/main-element-1.png'
-import MAIN2 from '../../assets/particles/main-element-2.png'
-import MAIN3 from '../../assets/particles/main-element-3.png'
-import MAIN4 from '../../assets/particles/main-element-4.png'
-import MAIN5 from '../../assets/particles/main-element-5.png'
+import MAIN1 from '../../assets/particles/main/main-element-1.png'
+import MAIN2 from '../../assets/particles/main/main-element-2.png'
+import MAIN3 from '../../assets/particles/main/main-element-3.png'
+import MAIN4 from '../../assets/particles/main/main-element-4.png'
+import MAIN5 from '../../assets/particles/main/main-element-5.png'
 import {Socials} from "../Footer/Socials/Socials";
 
 

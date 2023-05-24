@@ -5,6 +5,7 @@
   min-height: 100vh;
   padding: 100px 0;
   background-color: #222222;
+  position: relative;
 .about_container {
   @include container();
   .content_row {
@@ -60,11 +61,31 @@
 }
 }
 
+.design_element {
+  .de_about1 {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+  .de_about2 {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+  }
+  .de_about3 {
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+  }
+  .elem_updown {
+    @include updown_anim;
+  }
+}
 
-
-
-@media screen and (max-width: 1500px) {
-
+@media screen and (max-width: 1230px) {
+  .design_element {
+    display: none;
+  }
   .content_row {
     flex-direction: column;
     align-items: center;

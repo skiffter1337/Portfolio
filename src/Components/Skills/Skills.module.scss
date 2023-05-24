@@ -3,20 +3,56 @@
 
 
 .skillsBlock {
-    min-height: 100vh;
-    padding: 100px 0;
-    background-color: #2a2a2a;
-    .skillsContainer {
-        @include container();
-        @include flex(flex, flex-start, null, column);
-        flex-wrap: nowrap;
-        .skills {
-            gap: 20px;
-            @include flex(flex, space-between, flex-start);
-            flex-wrap: wrap;
-            @media screen and (max-width: 1230px) {
-                justify-content: center;
-            }
-        }
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: #2a2a2a;
+  position: relative;
+
+  .skillsContainer {
+    @include container();
+    @include flex(flex, flex-start, null, column);
+    flex-wrap: nowrap;
+
+    .skills {
+      gap: 20px;
+      @include flex(flex, space-between, flex-start);
+      flex-wrap: wrap;
+      @media screen and (max-width: 1230px) {
+        justify-content: center;
+      }
     }
+  }
+
+  .design_element {
+    .de_skills1 {
+      position: absolute;
+      left: 5%;
+      top: 12%;
+      z-index: 2;
+    }
+
+    .de_skills2 {
+      position: absolute;
+      right: 5%;
+      top: 48%;
+      z-index: 2;
+    }
+
+    .de_skills3 {
+      position: absolute;
+      left: 5%;
+      bottom: -2%;
+      z-index: 1;
+    }
+
+    .elem_updown {
+      @include updown_anim;
+    }
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .design_element {
+    display: none;
+  }
 }

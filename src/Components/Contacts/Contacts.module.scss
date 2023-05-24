@@ -6,6 +6,7 @@
   min-height: 100vh;
   padding: 100px 0;
   background-color: $bgColor;
+  position: relative;
 
   .contactsContainer {
     @include container();
@@ -19,15 +20,19 @@
       gap: 50px;
       width: 100%;
       margin-bottom: 30px;
+
       .contact_block {
         @include flex(flex, space-between);
+
         address {
           font-style: normal;
         }
+
         h4 {
           @include fontFamily($headerFontFamily, 700, 1.5rem, 1.2, #fff);
           margin-bottom: 0.5rem;
         }
+
         &:hover {
           transition: 0.2s;
           color: $primaryColor;
@@ -63,6 +68,7 @@
       flex-wrap: wrap;
       gap: 70px;
       margin-bottom: 60px;
+
       .map {
         width: 100%;
         max-width: 600px;
@@ -70,10 +76,12 @@
         border-radius: 10px;
         overflow: hidden;
       }
+
       .contactsFormContainer {
         width: 100%;
         max-width: 600px;
       }
+
       h3 {
         font-size: 36px;
         margin-bottom: 28px;
@@ -84,6 +92,7 @@
       .form_control {
         display: flex;
         gap: 15px;
+
         .form_input {
           border: 1px solid #606060;
           background: $bgSecondColor;
@@ -114,11 +123,36 @@
     }
 
   }
+  .design_element {
+    .de_contacts1 {
+      position: absolute;
+      right: 7%;
+      top: 12%;
+    }
+    .de_contacts2 {
+      position: absolute;
+      left: 4%;
+      bottom: -2%;
+      z-index: 1;
+    }
+    .de_contacts3 {
+      position: absolute;
+      left: 4%;
+      top: 20%;
+      z-index: 1;
+    }
+    .elem_updown {
+      @include updown_anim;
+    }
+  }
 }
 
 
 
 @media screen and (max-width: 1230px) {
+  .design_element {
+    display: none;
+  }
   .form_row {
     margin-top: 30px;
     gap: 40px !important;

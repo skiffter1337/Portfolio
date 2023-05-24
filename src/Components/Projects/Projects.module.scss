@@ -5,6 +5,7 @@
   min-height: 100vh;
   padding: 100px 0;
   background-color: $bgColor;
+  position: relative;
   .projectsContainer {
     @include container();
     @include flex(flex, flex-start, null, column);
@@ -16,6 +17,25 @@
       @media screen and (max-width: 1230px) {
         justify-content: center;
       }
+    }
+  }
+  .design_element {
+    .de_project1 {
+      position: absolute;
+      left: 3%;
+      top: 35%;
+    }
+    .de_project2 {
+      position: absolute;
+      right: 5%;
+      bottom: -2%;
+      z-index: 2;
+    }
+    .elem_updown {
+      @include updown_anim;
+    }
+    @media screen and (max-width: 1230px) {
+      display: none;
     }
   }
 }

@@ -2,6 +2,10 @@ import React from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
 import KEKS from "../../assets/image/keks.jpg"
 import {Button} from "../../common/components/Button/Button";
+import ABOUT1 from "../../assets/particles/about/about-element-1.png";
+import ABOUT2 from "../../assets/particles/about/about-element-2.png";
+import ABOUT3 from "../../assets/particles/about/about-element-3.png";
+
 
 
 export const AboutMe = () => {
@@ -95,6 +99,11 @@ export const AboutMe = () => {
                         <Button title={"download cv"}/>
                     </div>
                 </div>
+            </div>
+            <div className={s.design_element}>
+                <img className={`${s.de_about1} ${s.elem_updown}`} src={ABOUT1}/>
+                <img className={`${s.de_about2} ${s.elem_updown}`} src={ABOUT2}/>
+                <img className={`${s.de_about3} ${s.elem_updown}`} src={ABOUT3}/>
             </div>
         </section>
     );

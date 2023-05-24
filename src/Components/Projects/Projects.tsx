@@ -5,6 +5,9 @@ import {Title} from '../../common/components/Title/Title';
 import socialImg2 from './../../assets/image/social_network2.png'
 import socialImg4 from './../../assets/image/social_network4.png'
 import todoListImg from './../../assets/image/todoList.webp'
+import PROJECT1 from '../../assets/particles/projects/projects-element-1.png'
+import PROJECT2 from '../../assets/particles/projects/projects-element-2.png';
+
 
 export type ProjectsType = {
     title: string
@@ -45,6 +48,10 @@ export const Projects = () => {
                 <div className={s.projects}>
                     {mappedProjects}
                 </div>
+            </div>
+            <div className={s.design_element}>
+                <img className={`${s.de_project1} ${s.elem_updown}`} src={PROJECT1}/>
+                <img className={`${s.de_project2} ${s.elem_updown}`} src={PROJECT2}/>
             </div>
         </div>
     );

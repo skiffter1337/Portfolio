@@ -5,6 +5,10 @@ import address from "../../assets/image/map-marker.svg"
 import phone from "../../assets/image/call.svg"
 import email from "../../assets/image/mail.svg"
 import {Button} from "../../common/components/Button/Button";
+import CONTACTS1 from "../../assets/particles/contacts/contacts-element-1.png";
+import CONTACTS2 from "../../assets/particles/contacts/contacts-element-2.png";
+import CONTACTS3 from "../../assets/particles/contacts/contacts-element-3.png";
+
 
 
 export const Contacts = () => {
@@ -85,7 +89,11 @@ export const Contacts = () => {
                     </div>
                 </div>
             </div>
-
+            <div className={s.design_element}>
+                <img className={`${s.de_contacts1} ${s.elem_updown}`} src={CONTACTS1}/>
+                <img className={`${s.de_contacts2} ${s.elem_updown}`} src={CONTACTS2}/>
+                <img className={`${s.de_contacts3} ${s.elem_updown}`} src={CONTACTS3}/>
+            </div>
         </div>
     );
 };
