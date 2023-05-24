@@ -6,6 +6,7 @@
   padding: 100px 0;
   background-color: #222222;
 .about_container {
+  @include container();
   .content_row {
     @include flex(flex, space-around);
     gap: 100px;
@@ -31,20 +32,6 @@
       .about_par {
         @include fontFamily($textFontFamily, 500, 18px, 1.5, $paragraphTextColor);
         margin-bottom: 1rem;
-      }
-    }
-    .about_btn {
-      padding: 15px 42px;
-      background: $primaryColor;
-      border-radius: 5px;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: none;
-      @include fontFamily($headerFontFamily, 700, 18px, 1.5, #fff);
-      &:hover {
-        transition: 0.2s;
-        background: rgba($primaryColor, 0.7);
-        cursor: pointer;
       }
     }
     .personal_info_block {

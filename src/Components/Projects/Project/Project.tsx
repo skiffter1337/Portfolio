@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Project.module.scss'
 import {ProjectsType} from "../Projects";
+import {Button} from "../../../common/components/Button/Button";
 
 
 
@@ -12,7 +13,9 @@ export const Project = (props: ProjectsType) => {
     return (
         <div className={s.project_block}>
             <div className={s.project_img} style={imageStyles}>
-                <button className={s.project_btn}>View</button>
+                <div className={s.project_btn} >
+                <Button title={"View"}/>
+                </div>
             </div>
             <div className={s.project_info}>
                 <h3 className={s.project_title}>{props.title}</h3>

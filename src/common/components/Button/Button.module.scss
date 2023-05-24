@@ -1,0 +1,17 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.button {
+  padding: 15px 42px;
+  background: #009e66;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  @include fontFamily($headerFontFamily, 700, 18px, 1.5, #fff);
+  &:hover {
+    transition: 0.2s;
+    background: rgba($primaryColor, 0.7);
+    cursor: pointer;
+  }
+}

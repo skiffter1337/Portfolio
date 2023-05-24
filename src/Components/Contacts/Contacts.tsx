@@ -1,11 +1,10 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
 import {Title} from "../../common/components/Title/Title";
-import {Map} from "../../common/components/Map/Map";
 import address from "../../assets/image/map-marker.svg"
 import phone from "../../assets/image/call.svg"
 import email from "../../assets/image/mail.svg"
+import {Button} from "../../common/components/Button/Button";
 
 
 export const Contacts = () => {
@@ -16,9 +15,8 @@ export const Contacts = () => {
 
     return (
         <div className={s.contactsBlock}>
-            <div className={`${styleContainer.container} ${s.contactsContainer}`}>
+            <div className={s.contactsContainer}>
                 <Title>Get in touch</Title>
-
                 <div className={s.contacts_row}>
                     <div className={s.contact_block}>
                         <div className={s.icon_box}>
@@ -62,7 +60,17 @@ export const Contacts = () => {
                 </div>
 
                 <div className={s.form_row}>
-                    <Map/>
+                    <div className={s.map}>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1255.3201070645564!2d40.97419749297321!3d56.999309832411974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1683207755196!5m2!1sru!2sru"
+                            width="600"
+                            height="395"
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
+                    </div>
                     <div className={s.contactsFormContainer}>
                         <form>
                             <h3>Write me a message</h3>
@@ -72,7 +80,7 @@ export const Contacts = () => {
                             </div>
                             <textarea placeholder={"Your message here*"} required
                                       className={s.form_textarea}></textarea>
-                            <button type="submit" className={s.submitBtn}>Send message</button>
+                            <Button title={"send message"} type={"submit"}/>
                         </form>
                     </div>
                 </div>

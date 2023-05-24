@@ -1,14 +1,14 @@
 import React from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
-import styleContainer from "../../common/styles/Container.module.css";
 import KEKS from "../../assets/image/keks.jpg"
+import {Button} from "../../common/components/Button/Button";
 
 
 export const AboutMe = () => {
     let lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum harum molestiae, numquam optio quo ut voluptates? Aliquid dolorum hic numquam qui reiciendis suscipit? A libero recusandae ullam ut. Alias?"
     return (
         <section className={s.about_block}>
-            <div className={`${styleContainer.container} ${s.about_container}`}>
+            <div className={s.about_container}>
                 <div className={s.content_row}>
                     <div className={s.image_block}>
                         <img src={KEKS}/>
@@ -92,9 +92,7 @@ export const AboutMe = () => {
                                 </ul>
                             </div>
                         </div>
-                        <button className={s.about_btn}>
-                            <a>DOWNLOAD CV</a>
-                        </button>
+                        <Button title={"download cv"}/>
                     </div>
                 </div>
             </div>

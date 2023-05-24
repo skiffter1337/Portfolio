@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
 import {Project} from './Project/Project';
 import {Title} from '../../common/components/Title/Title';
 import socialImg2 from './../../assets/image/social_network2.png'
@@ -41,7 +40,7 @@ export const Projects = () => {
     const mappedProjects = projects.map((p, i) => <Project key={i} title={p.title} description={p.description} image={p.image}/>)
     return (
         <div className={s.projectsBlock}>
-            <div className={`${styleContainer.container} ${s.projectsContainer}`}>
+            <div className={s.projectsContainer}>
                 <Title>Projects</Title>
                 <div className={s.projects}>
                     {mappedProjects}

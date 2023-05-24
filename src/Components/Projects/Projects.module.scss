@@ -6,6 +6,7 @@
   padding: 100px 0;
   background-color: $bgColor;
   .projectsContainer {
+    @include container();
     @include flex(flex, flex-start, null, column);
     flex-wrap: nowrap;
     .projects {

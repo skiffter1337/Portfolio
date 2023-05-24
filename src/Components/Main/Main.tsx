@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './Main.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
 import KEKS_MAIN from './../../assets/image/keks_main.jpg'
+import {Button} from "../../common/components/Button/Button";
 
 
 export const Main = () => {
     return (
         <section className={s.main_block}>
-            <div className={`${styleContainer.container} ${s.main_container}`}>
+            <div className={s.main_container}>
             <div className={s.greeting}>
                 <h1>
                     <div className={s.small}>Hello, I'm</div>
@@ -21,10 +21,8 @@ export const Main = () => {
                         {"             "}
                     </p>
                 </div>
-                <div>
-                    <button className={s.contact_me_btn}>
-                        contact me
-                    </button>
+                <div className={s.button_container}>
+                    <Button title={"contact me"}/>
                 </div>
             </div>
             <div className={s.photo_block}>

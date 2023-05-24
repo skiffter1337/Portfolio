@@ -43,7 +43,7 @@ export const Skills = () => {
 
     return (
         <div className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+            <div className={s.skillsContainer}>
                 <Title>My skills</Title>
                 <div className={s.skills}>
                     {mappedSkills}

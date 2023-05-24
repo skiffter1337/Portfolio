@@ -32,23 +32,11 @@
       border-top-right-radius: 12px;
 
     }
-    .project_btn {
-      position: relative;
-      padding: 12px 30px;
-      background-color: $primaryColor;
-      /*background-color: transparent;*/
-      border: none;
-      text-transform: uppercase;
-      border-radius: 5px;
-      color: #fff;
-      @include fontFamily($headerFontFamily, 700, 14px);
-      &:hover {
-        transition: 0.2s;
-        background: rgba($primaryColor, 0.7);
-        cursor: pointer;
-      }
-    }
 
+    .project_btn {
+
+      position: relative;
+    }
   }
   .project_info {
     padding: 20px;
