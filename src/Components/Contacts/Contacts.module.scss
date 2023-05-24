@@ -60,8 +60,9 @@
       @include flex(flex, center);
       width: 100%;
       flex-wrap: wrap;
-      gap: 150px;
+      gap: 70px;
       margin-bottom: 60px;
+
 
       .contactsFormContainer {
         width: 100%;
@@ -74,7 +75,7 @@
 
       }
 
-      .from_control {
+      .form_control {
         display: flex;
         gap: 15px;
         .form_input {
@@ -87,18 +88,6 @@
           width: 1%;
 
           border-radius: 4px;
-
-          //&:active {
-          // border-color: #009e66;
-          //}
-          //
-          //&::placeholder {
-          //  font-size: 16px;
-          //  font-weight: 400;
-          //  line-height: 1.5;
-          //
-          //}
-
         }
       }
 
@@ -140,9 +129,11 @@
 
 @media screen and (max-width: 1230px) {
   .form_row {
+    margin-top: 30px;
     gap: 40px !important;
   }
   .contacts_row {
+    max-width: 600px;
     flex-direction: column;;
   }
   .contact_block {

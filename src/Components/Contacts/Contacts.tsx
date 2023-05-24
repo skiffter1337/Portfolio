@@ -66,7 +66,7 @@ export const Contacts = () => {
                     <div className={s.contactsFormContainer}>
                         <form>
                             <h3>Write me a message</h3>
-                            <div className={s.from_control}>
+                            <div className={s.form_control}>
                                 <input placeholder={"Name*"} required className={s.form_input}/>
                                 <input type={"email"} placeholder={"Email*"} required className={s.form_input}/>
                             </div>
