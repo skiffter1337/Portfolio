@@ -2,9 +2,15 @@ import React from 'react';
 import s from './Skills.module.scss'
 import {Skill} from './Skill/Skill';
 import {Title} from "../../common/components/Title/Title";
-import ts from "../../assets/image/ts.svg"
-import react from "../../assets/image/react.svg"
-import redux from "../../assets/image/redux.svg"
+import react from "../../assets/image/techs/react2.svg"
+import redux from "../../assets/image/techs/redux2.svg"
+import ts from "../../assets/image/techs/ts2.svg"
+import js from "../../assets/image/techs/js.svg"
+import axios from "../../assets/image/techs/axios.svg"
+import git from "../../assets/image/techs/git.svg"
+import html from "../../assets/image/techs/html.svg"
+import css from "../../assets/image/techs/css.svg"
+import mui from "../../assets/image/techs/mui.svg"
 import SKILLS1 from "../../assets/particles/skills/skills-element-1.png";
 import SKILLS2 from "../../assets/particles/skills/skills-element-2.png";
 import SKILLS3 from "../../assets/particles/skills/skills-element-3.png";
@@ -14,6 +20,7 @@ export type SkillsType = {
     title: string
     description: string
     image: string
+    aosDelay: string
 }
 
 export const Skills = () => {
@@ -23,26 +30,61 @@ export const Skills = () => {
         {
             title: "React",
             description: lorem,
-            image: react
+            image: react,
+            aosDelay: "200"
         },
         {
             title: "Redux",
             description: lorem,
-            image: redux
+            image: redux,
+            aosDelay: "400"
         },
         {
             title: "TypeScript",
             description: lorem,
-            image: ts
+            image: ts,
+            aosDelay: "600"
         },
         {
             title: "JavaScript",
             description: lorem,
-            image: ts
-        }
+            image: js,
+            aosDelay: "800"
+        },
+        {
+            title: "Material UI",
+            description: lorem,
+            image: mui,
+            aosDelay: "1000"
+        },
+        {
+            title: "Axios",
+            description: lorem,
+            image: axios,
+            aosDelay: "1200"
+        },
+        {
+            title: "HTML",
+            description: lorem,
+            image:html,
+            aosDelay: "1200"
+        },
+        {
+            title: "CSS",
+            description: lorem,
+            image: css,
+            aosDelay: "1200"
+        },
+        {
+            title: "GIT",
+            description: lorem,
+            image: git,
+            aosDelay: "1200"
+        },
+
     ]
 
-    const mappedSkills = skills.map((s, i) => <Skill key={i} title={s.title} description={s.description} image={s.image}/>)
+    const mappedSkills = skills.map((s, i) => <Skill key={i} title={s.title} description={s.description} image={s.image} aosDelay={s.aosDelay}/>)
 
     return (
         <div className={s.skillsBlock}>

@@ -8,7 +8,7 @@
     width: 100%;
     background-color: transparent;
     transition: background-color .3s ease-in-out;
-    z-index: 2;
+    z-index: 5;
     .header_container {
         width: 100%;
         @include flex(flex, space-around, center);

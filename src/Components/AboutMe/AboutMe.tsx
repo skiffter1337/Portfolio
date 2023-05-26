@@ -1,23 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
 import KEKS from "../../assets/image/keks.jpg"
 import {Button} from "../../common/components/Button/Button";
 import ABOUT1 from "../../assets/particles/about/about-element-1.png";
 import ABOUT2 from "../../assets/particles/about/about-element-2.png";
 import ABOUT3 from "../../assets/particles/about/about-element-3.png";
-
+import 'aos/dist/aos.css';
 
 
 export const AboutMe = () => {
+
+
+
     let lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum harum molestiae, numquam optio quo ut voluptates? Aliquid dolorum hic numquam qui reiciendis suscipit? A libero recusandae ullam ut. Alias?"
     return (
         <section className={s.about_block}>
             <div className={s.about_container}>
                 <div className={s.content_row}>
-                    <div className={s.image_block}>
+                    <div className={s.image_block} data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
                         <img src={KEKS}/>
                     </div>
-                    <div className={s.content_block}>
+                    <div className={s.content_block} data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
                         <h2>
                         <span>
                             About me

@@ -13,6 +13,7 @@ export type ProjectsType = {
     title: string
     description: string
     image: string
+    aosDelay: string
 }
 export const Projects = () => {
     let lorem = "Duis aute irure dolor in it esse cillum dolore eu fugiat nulla pari erunt mollit anim id est laborum."
@@ -21,26 +22,30 @@ export const Projects = () => {
         {
             title: "Social Network",
             description: lorem,
-            image: socialImg4
+            image: socialImg4,
+            aosDelay: "200"
         },
         {
             title: "Counter",
             description: lorem,
-            image: socialImg2
+            image: socialImg2,
+            aosDelay: "400"
         },
         {
             title: "TodoList",
             description: lorem,
-            image: todoListImg
+            image: todoListImg,
+            aosDelay: "600"
         },
         {
             title: "Some shit",
             description: lorem,
-            image: todoListImg
+            image: todoListImg,
+            aosDelay: "800"
         }
     ]
 
-    const mappedProjects = projects.map((p, i) => <Project key={i} title={p.title} description={p.description} image={p.image}/>)
+    const mappedProjects = projects.map((p, i) => <Project key={i} title={p.title} description={p.description} image={p.image} aosDelay={p.aosDelay}/>)
     return (
         <div className={s.projectsBlock}>
             <div className={s.projectsContainer}>

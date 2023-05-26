@@ -22,11 +22,11 @@ export const Contacts = () => {
             <div className={s.contactsContainer}>
                 <Title>Get in touch</Title>
                 <div className={s.contacts_row}>
-                    <div className={s.contact_block}>
+                    <div className={s.contact_block} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                         <div className={s.icon_box}>
                             <img src={address} className={s.icons}/>
                         </div>
-                        <div className={s.info_wrapper}>
+                        <div className={s.info_wrapper} >
                             <h4>
                                 Address
                             </h4>
@@ -35,7 +35,7 @@ export const Contacts = () => {
                             </address>
                         </div>
                     </div>
-                    <div className={s.contact_block}>
+                    <div className={s.contact_block} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
                         <div className={s.icon_box}>
                             <img src={phone} className={s.icons}/>
                         </div>
@@ -48,7 +48,7 @@ export const Contacts = () => {
                             </a>
                         </div>
                     </div>
-                    <div className={s.contact_block}>
+                    <div className={s.contact_block} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
                         <div className={s.icon_box}>
                             <img src={email} className={s.icons}/>
                         </div>
@@ -64,7 +64,7 @@ export const Contacts = () => {
                 </div>
 
                 <div className={s.form_row}>
-                    <div className={s.map}>
+                    <div className={s.map} data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1255.3201070645564!2d40.97419749297321!3d56.999309832411974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1683207755196!5m2!1sru!2sru"
                             width="600"
@@ -75,7 +75,7 @@ export const Contacts = () => {
                         >
                         </iframe>
                     </div>
-                    <div className={s.contactsFormContainer}>
+                    <div className={s.contactsFormContainer} data-aos="fade-right" data-aos-duration="1500">
                         <form>
                             <h3>Write me a message</h3>
                             <div className={s.form_control}>

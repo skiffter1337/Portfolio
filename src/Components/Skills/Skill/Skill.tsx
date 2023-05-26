@@ -5,7 +5,7 @@ import {SkillsType} from "../Skills";
 
 export const Skill = (props: SkillsType) => {
     return (
-        <div className={s.skill_block}>
+        <div className={s.skill_block} data-aos="fade-up" data-aos-delay={props.aosDelay}>
             <div className={s.icon_box} >
                 <img src={props.image} className={s.icons}/>
             </div>

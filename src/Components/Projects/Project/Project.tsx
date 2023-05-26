@@ -11,7 +11,7 @@ export const Project = (props: ProjectsType) => {
     const imageStyles = {backgroundImage: `url(${props.image})`}
 
     return (
-        <div className={s.project_block}>
+        <div className={s.project_block} data-aos="fade-up" data-aos-delay={props.aosDelay}>
             <div className={s.project_img} style={imageStyles}>
                 <div className={s.project_btn} >
                 <Button title={"View"}/>

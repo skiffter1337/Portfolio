@@ -24,6 +24,9 @@
   }
 
   .design_element {
+    @media screen and (max-width: 1230px) {
+      display: none;
+    }
     .de_skills1 {
       position: absolute;
       left: 5%;
@@ -51,8 +54,3 @@
   }
 }
 
-@media screen and (max-width: 1230px) {
-  .design_element {
-    display: none;
-  }
-}
