@@ -20,7 +20,7 @@ export const Burger = () => {
             </div>
         </div>
            <div className={burgerClasses}>
-               <Links classes={s.burger_list}/>
+               <Links classes={s.burger_list} toggleBurger={toggleBurger}/>
             </div>
         </>
     );

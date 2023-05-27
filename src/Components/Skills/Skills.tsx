@@ -87,7 +87,7 @@ export const Skills = () => {
     const mappedSkills = skills.map((s, i) => <Skill key={i} title={s.title} description={s.description} image={s.image} aosDelay={s.aosDelay}/>)
 
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={"skills"}>
             <div className={s.skillsContainer}>
                 <Title>My skills</Title>
                 <div className={s.skills}>

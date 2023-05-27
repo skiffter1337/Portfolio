@@ -22,8 +22,12 @@
             min-width: 500px;
             list-style-type: none;
             @include flex(flex, space-between);
-            a {
+            li {
                 @include fontFamily($headerFontFamily, bold, 18px, 18px, #fff, none, include);
+                cursor: pointer;
+                .active {
+                    color: $primaryColor;
+                }
                 &:hover {
                     transition: 0.4s;
                     color: $primaryColor;

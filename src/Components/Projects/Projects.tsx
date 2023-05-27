@@ -47,7 +47,7 @@ export const Projects = () => {
 
     const mappedProjects = projects.map((p, i) => <Project key={i} title={p.title} description={p.description} image={p.image} aosDelay={p.aosDelay}/>)
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id={"projects"}>
             <div className={s.projectsContainer}>
                 <Title>Projects</Title>
                 <div className={s.projects}>

@@ -6,20 +6,34 @@ import ABOUT1 from "../../assets/particles/about/about-element-1.png";
 import ABOUT2 from "../../assets/particles/about/about-element-2.png";
 import ABOUT3 from "../../assets/particles/about/about-element-3.png";
 import 'aos/dist/aos.css';
+import KEKS_MAIN from "../../assets/image/keks_main.jpg";
+import {Tilt} from "react-tilt";
 
 
 export const AboutMe = () => {
-
+    const defaultOptions = {
+        reverse:        false,
+        max:            25,
+        perspective:    1000,
+        scale:          1,
+        speed:          1000,
+        transition:     true,
+        axis:           null,
+        reset:          true,
+        easing:         "cubic-bezier(.03,.98,.52,.99)",
+    }
 
 
     let lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eum harum molestiae, numquam optio quo ut voluptates? Aliquid dolorum hic numquam qui reiciendis suscipit? A libero recusandae ullam ut. Alias?"
     return (
-        <section className={s.about_block}>
+        <section className={s.about_block} id={"about"}>
             <div className={s.about_container}>
                 <div className={s.content_row}>
-                    <div className={s.image_block} data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
-                        <img src={KEKS}/>
-                    </div>
+                    <Tilt options={defaultOptions}>
+                        <div className={s.image_block} data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
+                            <img src={KEKS}/>
+                        </div>
+                    </Tilt>
                     <div className={s.content_block} data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">
                         <h2>
                         <span>

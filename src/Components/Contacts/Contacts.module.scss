@@ -89,9 +89,17 @@
 
       }
 
+      textarea {
+        &:focus {
+          outline: none !important;
+          border: 1px solid $primaryColor !important;
+        }
+      }
+
       .form_control {
         display: flex;
         gap: 15px;
+
 
         .form_input {
           border: 1px solid #606060;
@@ -103,6 +111,11 @@
           width: 1%;
 
           border-radius: 4px;
+
+          &:focus {
+            outline: none !important;
+            border: 1px solid $primaryColor !important;
+          }
         }
       }
 
@@ -123,30 +136,33 @@
     }
 
   }
+
   .design_element {
     .de_contacts1 {
       position: absolute;
       right: 7%;
       top: 12%;
     }
+
     .de_contacts2 {
       position: absolute;
       left: 4%;
       bottom: -2%;
       z-index: 1;
     }
+
     .de_contacts3 {
       position: absolute;
       left: 4%;
       top: 20%;
       z-index: 1;
     }
+
     .elem_updown {
       @include updown_anim;
     }
   }
 }
-
 
 
 @media screen and (max-width: 1230px) {

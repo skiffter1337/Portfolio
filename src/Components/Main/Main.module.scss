@@ -12,32 +12,38 @@
   color: #fff;
   position: relative;
   z-index: 1;
+
   .design_element {
     .de_main1 {
       left: 8%;
       top: 22%;
       position: absolute;
     }
+
     .de_main2 {
       right: 7%;
       top: 20%;
       position: absolute;
     }
+
     .de_main3 {
       right: 5%;
       bottom: 12%;
       position: absolute;
     }
+
     .de_main4 {
       left: 48%;
       top: 30%;
       position: absolute;
     }
+
     .de_main5 {
       left: 10%;
       bottom: 18%;
       position: absolute;
     }
+
     .elem_updown {
       @include updown_anim;
     }
@@ -52,6 +58,7 @@
   @include container();
   width: 80%;
   gap: 30px;
+  position: relative;
 
 
   h1 {
@@ -78,11 +85,28 @@
     color: #b0aac0;
   }
 
-  .photo {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 5%;
+  .techsBlock {
+    margin-bottom: 100px;
+    .typingEffect {
+      position: absolute;
+      span {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
   }
+
+  .photo_block {
+    transition: transform 0.3s ease; // Не работает?
+    .photo {
+      transition: transform 0.3s ease;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 5%;
+    }
+
+  }
+
 
   .button_container {
     display: flex;
