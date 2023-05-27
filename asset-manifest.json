@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.eff1f03f.css",
-    "main.js": "/Portfolio/static/js/main.d28893e6.js",
+    "main.css": "/Portfolio/static/css/main.6459e4e0.css",
+    "main.js": "/Portfolio/static/js/main.ef579907.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/social_network4.png": "/Portfolio/static/media/social_network4.f95073419a09f935af44.png",
     "static/media/keks_main.jpg": "/Portfolio/static/media/keks_main.0de5f1eae7d643ccb9ec.jpg",
@@ -40,12 +40,12 @@
     "static/media/telegram-plane.svg": "/Portfolio/static/media/telegram-plane.cb1396e9b3d8cc0280b45230f3565391.svg",
     "static/media/facebook-f.svg": "/Portfolio/static/media/facebook-f.680d4f3d17005fee4bdc25c994f8dc50.svg",
     "static/media/axios.svg": "/Portfolio/static/media/axios.6d170f64a4a89ba89dd79fb56a486bbd.svg",
-    "main.eff1f03f.css.map": "/Portfolio/static/css/main.eff1f03f.css.map",
-    "main.d28893e6.js.map": "/Portfolio/static/js/main.d28893e6.js.map",
+    "main.6459e4e0.css.map": "/Portfolio/static/css/main.6459e4e0.css.map",
+    "main.ef579907.js.map": "/Portfolio/static/js/main.ef579907.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eff1f03f.css",
-    "static/js/main.d28893e6.js"
+    "static/css/main.6459e4e0.css",
+    "static/js/main.ef579907.js"
   ]
 }
