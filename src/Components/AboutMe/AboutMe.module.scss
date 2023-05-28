@@ -11,6 +11,9 @@
   .content_row {
     @include flex(flex, space-around);
     gap: 100px;
+    .tilt {
+      transition: transform 0.3s ease;
+    }
     .image_block img {
       border-radius: 5%;
       width: 100%;

@@ -2,6 +2,10 @@
 @import 'src/common/styles/sass/mixins';
 
 .projectsBlock {
+
+  &:hover:after {
+    opacity: 1;
+  }
   min-height: 100vh;
   padding: 100px 0;
   background-color: $bgColor;
@@ -18,6 +22,8 @@
         justify-content: center;
       }
     }
+  }
+
   }
   .design_element {
     .de_project1 {
@@ -38,5 +44,5 @@
       display: none;
     }
   }
-}
+
 

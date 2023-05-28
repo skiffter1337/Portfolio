@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './Main.module.scss'
 import KEKS_MAIN from './../../assets/image/keks_main.jpg'
 import {Button} from "../../common/components/Button/Button";
@@ -7,7 +7,7 @@ import MAIN2 from '../../assets/particles/main/main-element-2.png'
 import MAIN3 from '../../assets/particles/main/main-element-3.png'
 import MAIN4 from '../../assets/particles/main/main-element-4.png'
 import MAIN5 from '../../assets/particles/main/main-element-5.png'
-import {Socials} from "../Footer/Socials/Socials";
+import {Socials} from "../../common/components/Socials/Socials";
 import ReactTypingEffect from 'react-typing-effect';
 import { Tilt } from 'react-tilt'
 
@@ -55,8 +55,8 @@ export const Main = () => {
                         </div>
                     </div>
                 </div>
-                    <Tilt options={defaultOptions}>
-                        <div className={s.photo_block}>
+                    <Tilt options={defaultOptions} className={s.tilt}>
+                        <div>
                             <img src={KEKS_MAIN} alt={"Ilya Shulapov"} className={s.photo}/>
                         </div>
                     </Tilt>

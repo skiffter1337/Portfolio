@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Skill.module.scss'
 import {SkillsType} from "../Skills";
 import { Tilt } from 'react-tilt'
-import KEKS_MAIN from "../../../assets/image/keks_main.jpg";
+
 
 export const Skill = (props: SkillsType) => {
 
@@ -18,7 +18,7 @@ export const Skill = (props: SkillsType) => {
         easing:         "cubic-bezier(.03,.98,.52,.99)",
     }
     return (
-        <Tilt options={defaultOptions}>
+        <Tilt options={defaultOptions} className={s.tilt}>
             <div
                 className={s.skill_block}
                 data-aos="fade-up"

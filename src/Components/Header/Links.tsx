@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from "./Header.module.scss";
 import {Link} from "react-scroll";
 
@@ -65,8 +65,8 @@ export const Links: React.FC<LinksPropsType> = ({classes, toggleBurger}) => {
     ]
 
 
-    const mappedLinks = links.map(l =>  {
-        return <li>
+    const mappedLinks = links.map((l, index) =>  {
+        return <li key={index}>
             <Link
                 activeClass={l.linksSettings.activeClass}
                 spy={l.linksSettings.isSpy}

@@ -55,8 +55,8 @@ export const Projects = () => {
                 </div>
             </div>
             <div className={s.design_element}>
-                <img className={`${s.de_project1} ${s.elem_updown}`} src={PROJECT1}/>
-                <img className={`${s.de_project2} ${s.elem_updown}`} src={PROJECT2}/>
+                <img className={`${s.de_project1} ${s.elem_updown}`} alt={""} src={PROJECT1}/>
+                <img className={`${s.de_project2} ${s.elem_updown}`} alt={""} src={PROJECT2}/>
             </div>
         </div>
     );

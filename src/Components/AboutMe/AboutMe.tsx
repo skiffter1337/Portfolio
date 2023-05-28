@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
 import KEKS from "../../assets/image/keks.jpg"
 import {Button} from "../../common/components/Button/Button";
@@ -6,7 +6,6 @@ import ABOUT1 from "../../assets/particles/about/about-element-1.png";
 import ABOUT2 from "../../assets/particles/about/about-element-2.png";
 import ABOUT3 from "../../assets/particles/about/about-element-3.png";
 import 'aos/dist/aos.css';
-import KEKS_MAIN from "../../assets/image/keks_main.jpg";
 import {Tilt} from "react-tilt";
 
 
@@ -29,7 +28,7 @@ export const AboutMe = () => {
         <section className={s.about_block} id={"about"}>
             <div className={s.about_container}>
                 <div className={s.content_row}>
-                    <Tilt options={defaultOptions}>
+                    <Tilt options={defaultOptions} className={s.tilt}>
                         <div className={s.image_block} data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
                             <img src={KEKS}/>
                         </div>

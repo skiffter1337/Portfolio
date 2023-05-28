@@ -96,14 +96,15 @@
     }
   }
 
-  .photo_block {
-    transition: transform 0.3s ease; // Не работает?
+  .tilt {
+    transition: transform 0.3s ease;
+  }
     .photo {
       transition: transform 0.3s ease;
       width: 100%;
       max-width: 500px;
       border-radius: 5%;
-    }
+
 
   }
 

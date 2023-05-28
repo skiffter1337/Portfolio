@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Footer.module.scss'
-import {Socials} from "./Socials/Socials";
+import {Socials} from "../../common/components/Socials/Socials";
 
 export const Footer = () => {
     return (

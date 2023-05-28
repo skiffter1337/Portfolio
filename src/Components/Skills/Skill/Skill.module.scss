@@ -1,6 +1,7 @@
 @import "src/common/styles/sass/mixins.scss";
 @import "src/common/styles/sass/variables.scss";
 
+
 .skill_block {
   max-width: 400px;
   border: 1px solid #474747;
@@ -50,5 +51,7 @@
 
 
 
-
+.tilt {
+  transition: transform 0.2s ease;
+}
 
