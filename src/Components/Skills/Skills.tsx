@@ -13,7 +13,7 @@ import css from "../../assets/image/techs/css.svg"
 import mui from "../../assets/image/techs/mui.svg"
 import SKILLS1 from "../../assets/particles/skills/skills-element-1.png";
 import SKILLS2 from "../../assets/particles/skills/skills-element-2.png";
-import SKILLS3 from "../../assets/particles/skills/skills-element-3.png";
+import SKILLS3 from "../../assets/particles/skills/skills-element-3G.png";
 
 
 export type SkillsType = {

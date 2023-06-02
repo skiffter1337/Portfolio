@@ -5,9 +5,9 @@ import address from "../../assets/image/map-marker.svg"
 import phone from "../../assets/image/call.svg"
 import email from "../../assets/image/mail.svg"
 import {Button} from "../../common/components/Button/Button";
-import CONTACTS1 from "../../assets/particles/contacts/contacts-element-1.png";
-import CONTACTS2 from "../../assets/particles/contacts/contacts-element-2.png";
-import CONTACTS3 from "../../assets/particles/contacts/contacts-element-3.png";
+import CONTACTS1 from "../../assets/particles/contacts/contacts-element-1G.png";
+import CONTACTS2 from "../../assets/particles/contacts/contacts-element-2G.png";
+import CONTACTS3 from "../../assets/particles/contacts/contacts-element-3G.png";
 
 
 

@@ -2,9 +2,9 @@ import React from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
 import KEKS from "../../assets/image/keks.jpg"
 import {Button} from "../../common/components/Button/Button";
-import ABOUT1 from "../../assets/particles/about/about-element-1.png";
-import ABOUT2 from "../../assets/particles/about/about-element-2.png";
-import ABOUT3 from "../../assets/particles/about/about-element-3.png";
+import ABOUT1 from "../../assets/particles/about/about-element-1G.png";
+import ABOUT2 from "../../assets/particles/about/about-element-2G.png";
+import ABOUT3 from "../../assets/particles/about/about-element-3G.png";
 import 'aos/dist/aos.css';
 import {Tilt} from "react-tilt";
 

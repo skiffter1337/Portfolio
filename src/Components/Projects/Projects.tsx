@@ -5,8 +5,8 @@ import {Title} from '../../common/components/Title/Title';
 import socialImg2 from './../../assets/image/social_network2.png'
 import socialImg4 from './../../assets/image/social_network4.png'
 import todoListImg from './../../assets/image/todoList.webp'
-import PROJECT1 from '../../assets/particles/projects/projects-element-1.png'
-import PROJECT2 from '../../assets/particles/projects/projects-element-2.png';
+import PROJECT1 from '../../assets/particles/projects/projects-element-1G.png'
+import PROJECT2 from '../../assets/particles/projects/projects-element-2G.png';
 
 
 export type ProjectsType = {
