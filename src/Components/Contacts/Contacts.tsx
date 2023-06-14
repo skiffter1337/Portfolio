@@ -4,15 +4,14 @@ import {Title} from "../../common/components/Title/Title";
 import address from "../../assets/image/map-marker.svg"
 import phone from "../../assets/image/call.svg"
 import email from "../../assets/image/mail.svg"
-import {Button} from "../../common/components/Button/Button";
 import CONTACTS1 from "../../assets/particles/contacts/contacts-element-1G.png";
 import CONTACTS2 from "../../assets/particles/contacts/contacts-element-2G.png";
 import CONTACTS3 from "../../assets/particles/contacts/contacts-element-3G.png";
+import {MyForm} from "./Form/Form";
 
 
 
 export const Contacts = () => {
-
 
 
 
@@ -43,9 +42,9 @@ export const Contacts = () => {
                             <h4>
                                 Phone
                             </h4>
-                            <a>
+                            <p>
                                 +79644923399
-                            </a>
+                            </p>
                         </div>
                     </div>
                     <div className={s.contact_block} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
@@ -56,9 +55,9 @@ export const Contacts = () => {
                             <h4>
                                 Email
                             </h4>
-                            <a>
+                            <p>
                                 shulapov1999@gmail.com
-                            </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -76,23 +75,14 @@ export const Contacts = () => {
                         </iframe>
                     </div>
                     <div className={s.contactsFormContainer} data-aos="fade-right" data-aos-duration="1500">
-                        <form>
-                            <h3>Write me a message</h3>
-                            <div className={s.form_control}>
-                                <input placeholder={"Name*"} required className={s.form_input}/>
-                                <input type={"email"} placeholder={"Email*"} required className={s.form_input}/>
-                            </div>
-                            <textarea placeholder={"Your message here*"} required
-                                      className={s.form_textarea}></textarea>
-                            <Button title={"send message"} type={"submit"}/>
-                        </form>
+                       <MyForm/>
                     </div>
                 </div>
             </div>
             <div className={s.design_element}>
-                <img className={`${s.de_contacts1} ${s.elem_updown}`} src={CONTACTS1}/>
-                <img className={`${s.de_contacts2} ${s.elem_updown}`} src={CONTACTS2}/>
-                <img className={`${s.de_contacts3} ${s.elem_updown}`} src={CONTACTS3}/>
+                <img className={`${s.de_contacts1} ${s.elem_updown}`} src={CONTACTS1} alt={''}/>
+                <img className={`${s.de_contacts2} ${s.elem_updown}`} src={CONTACTS2} alt={''}/>
+                <img className={`${s.de_contacts3} ${s.elem_updown}`} src={CONTACTS3} alt={''}/>
             </div>
         </div>
     );

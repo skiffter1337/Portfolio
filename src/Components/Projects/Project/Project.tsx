@@ -14,7 +14,9 @@ export const Project = (props: ProjectsType) => {
         <div className={s.project_block} data-aos="fade-up" data-aos-delay={props.aosDelay}>
             <div className={s.project_img} style={imageStyles}>
                 <div className={s.project_btn} >
+                    <a href={props.link} target="_blank">
                 <Button title={"View"}/>
+                    </a>
                 </div>
             </div>
             <div className={s.project_info}>
