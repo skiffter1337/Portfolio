@@ -10,6 +10,7 @@ import MAIN5 from '../../assets/particles/main/main-element-5.png'
 import {Socials} from "../../common/components/Socials/Socials";
 import ReactTypingEffect from 'react-typing-effect';
 import { Tilt } from 'react-tilt'
+import {Link} from "react-scroll";
 
 
 
@@ -48,7 +49,15 @@ export const Main = () => {
                    </div>
                     <div className={s.button_container}>
                         <div>
-                            <Button title={"contact me"}/>
+                            <Link
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={1000}
+                                to={'contacts'}
+                            >
+                                <Button title={"contact me"}/>
+                            </Link>
                         </div>
                         <div>
                             <Socials/>
@@ -62,11 +71,11 @@ export const Main = () => {
                     </Tilt>
             </div>
             <div className={s.design_element}>
-                <img className={`${s.de_main1} ${s.elem_updown}`} src={MAIN1}/>
-                <img className={`${s.de_main2} ${s.elem_move}`} src={MAIN2}/>
-                <img className={`${s.de_main3} ${s.elem_updown}`} src={MAIN3}/>
-                <img className={`${s.de_main4} ${s.elem_updown}`} src={MAIN4}/>
-                <img className={`${s.de_main5} ${s.elem_move}`} src={MAIN5}/>
+                <img className={`${s.de_main1} ${s.elem_updown}`} src={MAIN1} alt={"particle"}/>
+                <img className={`${s.de_main2} ${s.elem_move}`} src={MAIN2} alt={"particle"}/>
+                <img className={`${s.de_main3} ${s.elem_updown}`} src={MAIN3} alt={"particle"}/>
+                <img className={`${s.de_main4} ${s.elem_updown}`} src={MAIN4} alt={"particle"}/>
+                <img className={`${s.de_main5} ${s.elem_move}`} src={MAIN5} alt={"particle"}/>
             </div>
         </section>
     );
