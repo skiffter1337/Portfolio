@@ -1,5 +1,5 @@
-import axios from 'axios/index';
 import {FormValuesType} from "../Components/Contacts/Form/Form";
+import axios from "axios";
 
 
 const instance = axios.create({

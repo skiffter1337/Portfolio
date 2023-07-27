@@ -3,7 +3,7 @@
 
 
 .skill_block {
-  max-width: 400px;
+  width: 400px;
   border: 1px solid #474747;
   padding: 60px 48px;
   border-radius: 12px;
@@ -44,6 +44,7 @@
   }
   .skill_description {
     color: $paragraphTextColor;
+
 
     @include fontFamily($textFontFamily, 400, 18px, 1.5);
   }

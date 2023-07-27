@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import KEKS_MAIN from './../../assets/image/keks_main.jpg'
+import ME from './../../assets/image/me.jpg'
 import {Button} from "../../common/components/Button/Button";
 import MAIN1 from '../../assets/particles/main/main-element-1G.png'
 import MAIN2 from '../../assets/particles/main/main-element-2.png'
@@ -66,7 +66,7 @@ export const Main = () => {
                 </div>
                     <Tilt options={defaultOptions} className={s.tilt}>
                         <div>
-                            <img src={KEKS_MAIN} alt={"Ilya Shulapov"} className={s.photo}/>
+                            <img src={ME} alt={"Ilya Shulapov"} className={s.photo}/>
                         </div>
                     </Tilt>
             </div>

@@ -16,14 +16,23 @@ const formValues = {
     message: '',
 };
 
-const handleSubmit = (values: FormValuesType) => {
-    api.sendForm(values)
-        .then(() => {
-            alert('Message has been sent!')
-        })
-};
 
 export const MyForm = () => {
+
+
+    const handleSubmit = (values: FormValuesType) => {
+        api.sendForm(values)
+            .then(() => {
+                debugger
+                alert('Message has been sent!')
+            })
+            .catch(() => {
+                debugger
+                alert('Some error occurred')
+            })
+        console.log(1)
+    };
+
     return (
         <Formik
             initialValues={formValues}
@@ -46,6 +55,7 @@ export const MyForm = () => {
                         type="email"
                         name="email"
                         placeholder="Email*"
+                        required
                         className={s.form_input}
                     />
                 </div>

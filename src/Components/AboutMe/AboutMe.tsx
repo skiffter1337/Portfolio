@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../AboutMe/AboutMe.module.scss'
-import KEKS from "../../assets/image/keks.jpg"
+import ABOUT from "../../assets/image/about.png"
 import {Button} from "../../common/components/Button/Button";
 import ABOUT1 from "../../assets/particles/about/about-element-1G.png";
 import ABOUT2 from "../../assets/particles/about/about-element-2G.png";
@@ -30,7 +30,7 @@ export const AboutMe = () => {
                 <div className={s.content_row}>
                     <Tilt options={defaultOptions} className={s.tilt}>
                         <div className={s.image_block} data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
-                            <img src={KEKS}/>
+                            <img src={ABOUT}/>
                         </div>
                     </Tilt>
                     <div className={s.content_block} data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">

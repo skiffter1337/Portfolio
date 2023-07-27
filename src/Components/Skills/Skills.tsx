@@ -29,55 +29,55 @@ export const Skills = () => {
     const skills: SkillsType[] = [
         {
             title: "React",
-            description: lorem,
+            description: '',
             image: react,
             aosDelay: "200"
         },
         {
             title: "Redux",
-            description: lorem,
+            description: '',
             image: redux,
             aosDelay: "400"
         },
         {
             title: "TypeScript",
-            description: lorem,
+            description: '',
             image: ts,
             aosDelay: "600"
         },
         {
             title: "JavaScript",
-            description: lorem,
+            description: '',
             image: js,
             aosDelay: "800"
         },
         {
             title: "Material UI",
-            description: lorem,
+            description: '',
             image: mui,
             aosDelay: "1000"
         },
         {
             title: "Axios",
-            description: lorem,
+            description: '',
             image: axios,
             aosDelay: "1200"
         },
         {
             title: "HTML",
-            description: lorem,
+            description: '',
             image:html,
             aosDelay: "1200"
         },
         {
             title: "CSS",
-            description: lorem,
+            description: '',
             image: css,
             aosDelay: "1200"
         },
         {
             title: "GIT",
-            description: lorem,
+            description: '',
             image: git,
             aosDelay: "1200"
         },
