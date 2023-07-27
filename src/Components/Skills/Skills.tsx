@@ -24,7 +24,7 @@ export type SkillsType = {
 }
 
 export const Skills = () => {
-    let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+
 
     const skills: SkillsType[] = [
         {
