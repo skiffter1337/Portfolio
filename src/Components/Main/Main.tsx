@@ -11,7 +11,7 @@ import {Socials} from "../../common/components/Socials/Socials";
 import ReactTypingEffect from 'react-typing-effect';
 import { Tilt } from 'react-tilt'
 import {Link} from "react-scroll";
-
+import KEKS from './../../assets/image/keks.jpg'
 
 
 
@@ -66,7 +66,7 @@ export const Main = () => {
                 </div>
                     <Tilt options={defaultOptions} className={s.tilt}>
                         <div>
-                            <img src={ME} alt={"Ilya Shulapov"} className={s.photo}/>
+                            <img src={KEKS} alt={"Ilya Shulapov"} className={s.photo}/>
                         </div>
                     </Tilt>
             </div>
